@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Feedback</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>✏️ Edit Feedback</h1>
+  <a href="/feedbacks">← Back</a> <br> <br>
+  
+  <form action="/edit/<%= index %>" method="POST">
+    <label>Name:</label>
+    <input type="text" name="name" value="<%= feedback.name %>">
+
+    <label>Message:</label>
+    <textarea name="message" rows="5"><%= feedback.message %></textarea>
+
+    <button type="submit">Update</button>
+  </form>
+  
+</body>
+</html>
